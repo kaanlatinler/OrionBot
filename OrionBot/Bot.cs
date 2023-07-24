@@ -67,7 +67,8 @@ namespace OrionBot
             Commands.RegisterCommands<FunCommands>();
             Commands.RegisterCommands<GameCommands>();
 
-            slashCommandsConfig.RegisterCommands<FunSL>(325246556385181707);
+            slashCommandsConfig.RegisterCommands<FunSL>();
+            slashCommandsConfig.RegisterCommands<ModerationSL>();
 
             await Client.ConnectAsync();
             await Task.Delay(-1);
