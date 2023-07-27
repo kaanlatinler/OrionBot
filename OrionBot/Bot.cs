@@ -65,7 +65,6 @@ namespace OrionBot
 
                        
             Commands.RegisterCommands<FunCommands>();
-            Commands.RegisterCommands<GameCommands>();
 
             slashCommandsConfig.RegisterCommands<FunSL>();
             slashCommandsConfig.RegisterCommands<ModerationSL>();

@@ -14,7 +14,7 @@ namespace OrionBot.Commands
     internal class FunCommands : BaseCommandModule
     {
         [Command("sa")]
-        public async Task TestCommand(CommandContext ctx)
+        public async Task hiCommand(CommandContext ctx)
         {
             await ctx.Channel.SendMessageAsync("Cami mi lan burası As");
         }
