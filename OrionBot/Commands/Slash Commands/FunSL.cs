@@ -2,17 +2,14 @@
 using DSharpPlus.Entities;
 using DSharpPlus.Interactivity.Extensions;
 using DSharpPlus.SlashCommands;
+using OrionBot.Engine.External_Classes;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-
-namespace OrionBot.External_Classes.Slash_Commands
+namespace OrionBot.Commands.Slash_Commands
 {
     public class FunSL : ApplicationCommandModule
     {
-        [SlashCommand("anket", "Bir Anket Başlat")]
+        [SlashCommand("anket2", "Bir Anket Başlat")]
         public async Task pollCommand(InteractionContext ctx, [Option("soru", "Sorunun Konusu")] string Question,
                                                               [Option("zamanlimiti", "Anketin Suresi")] long TimeLimit,
                                                               [Option("option1", "Option 1")] string Option1,
@@ -96,7 +93,8 @@ namespace OrionBot.External_Classes.Slash_Commands
 
             await ctx.Channel.SendMessageAsync(resultsMessage);
         }
-        [SlashCommand("kartcek", "Botla karşılıklı oynadığınız bir kart oyunu.")]
+
+        [SlashCommand("kartcek2", "Botla karşılıklı oynadığınız bir kart oyunu.")]
         public async Task cardCommand(InteractionContext ctx)
         {
             await ctx.CreateResponseAsync(InteractionResponseType.ChannelMessageWithSource, new DiscordInteractionResponseBuilder()
@@ -158,7 +156,8 @@ namespace OrionBot.External_Classes.Slash_Commands
                 await ctx.Channel.SendMessageAsync(equalMessage);
             }
         }
-        [SlashCommand("yardım","Özellikler Komutlar")]
+
+        [SlashCommand("yardım2", "Özellikler Komutlar")]
         public async Task HelpCommand(InteractionContext ctx)
         {
             await ctx.CreateResponseAsync(InteractionResponseType.ChannelMessageWithSource, new DiscordInteractionResponseBuilder()

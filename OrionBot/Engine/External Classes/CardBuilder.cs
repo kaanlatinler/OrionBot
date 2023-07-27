@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrionBot.External_Classes
+namespace OrionBot.Engine.External_Classes
 {
     internal class CardBuilder
     {
