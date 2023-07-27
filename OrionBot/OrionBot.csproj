@@ -196,6 +196,8 @@
   <ItemGroup>
     <Compile Include="Commands\Prefix\BasicCommands.cs" />
     <Compile Include="Commands\Prefix\UserRequestedCommands.cs" />
+    <Compile Include="Commands\Slash Commands\FunSL.cs" />
+    <Compile Include="Commands\Slash Commands\ModerationSL.cs" />
     <Compile Include="Config\ConfigJSON.cs" />
     <Compile Include="Engine\External Classes\CardBuilder.cs" />
     <Compile Include="Engine\LevelSystem\DUser.cs" />
